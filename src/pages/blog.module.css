@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61.8vh;
+  max-height: 400px;
+  background: transparent;
+  opacity: 0.95;
+  font-size: 2em;
+  overflow: hidden;
+  color: #1e1e1e
+}
+
+.heroWrapper {
+  position: relative;
+  opacity: 0.85;
+}

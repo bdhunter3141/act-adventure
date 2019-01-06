@@ -1,0 +1,38 @@
+.navigationWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoImage {
+  height: 20vh;
+  max-height: 100px;
+  width: 280px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 20vh;
+  max-height: 100px;
+  font-size: 1.25em;
+}
+
+.navigationItem {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.navigationItem a {
+  color: currentColor;
+}
+
+@media all and (max-width: 1200px) {
+  .logoImage {
+    margin-left: 30px;
+  }
+}

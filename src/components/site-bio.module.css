@@ -1,0 +1,33 @@
+.bio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profileImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 40px;
+}
+
+.bioText {
+  width: 60%;
+  margin: 40px;
+}
+
+@media all and (max-width: 865px) {
+  .bio {
+    flex-direction: column;
+  }
+
+  .profileImage {
+    margin: 20px 0 0 0;
+  }
+
+  .bioText {
+    width: 85%;
+    margin: 10px;
+    text-align: center;
+  }
+}

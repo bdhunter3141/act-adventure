@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import PackingListEntry from '../components/packing-list-item'
+import favicon from '../../static/favicon.png'
 
 class RootIndex extends React.Component {
   render() {
@@ -14,7 +15,12 @@ class RootIndex extends React.Component {
 
     return (
       <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
+        <Helmet
+          title={siteTitle}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+        />
         <Hero data={headerImage.node} />
         <div className="wrapper">
           <h2 className="section-headline">the ultimate packing list for your adventure</h2>

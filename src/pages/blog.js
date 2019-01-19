@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
+import favicon from '../../static/favicon.png'
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,7 +14,12 @@ class BlogIndex extends React.Component {
 
     return (
       <div style={{ background: '#fff' }}>
-        <Helmet title={siteTitle} />
+        <Helmet
+          title={siteTitle}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+        />
         <Hero data={headerImage.node} />
         <div className="wrapper">
           <h2 className="section-headline">all articles</h2>

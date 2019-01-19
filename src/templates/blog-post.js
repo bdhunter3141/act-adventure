@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
-
+import favicon from '../../static/favicon.png'
 import heroStyles from '../components/hero.module.css'
 
 class BlogPostTemplate extends React.Component {
@@ -12,7 +12,12 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <div style={{ background: '#fff' }}>
-        <Helmet title={`${post.title} | ${siteTitle}`} />
+        <Helmet
+          title={`${post.title} | ${siteTitle}`}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+        />
         <div className={heroStyles.hero}>
           <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
         </div>

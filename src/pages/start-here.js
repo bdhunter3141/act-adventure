@@ -4,18 +4,22 @@ import get from "lodash/get";
 import Helmet from "react-helmet";
 import Hero from "../components/hero";
 import SiteBio from "../components/site-bio";
-import styles from "./start-here.module.css";
+import favicon from '../../static/favicon.png'
 
 class StartHere extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
     const [headerImage] = get(this, "props.data.allContentfulImage.edges");
     const [siteBio] = get(this, "props.data.allContentfulPerson.edges");
-    console.log(siteBio);
 
     return (
       <div style={{ background: "#fff" }}>
-        <Helmet title={siteTitle} />
+        <Helmet
+          title={siteTitle}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        ]}
+        />
         <Hero data={headerImage.node} />
         <div className="wrapper">
           <h2 className="section-headline">

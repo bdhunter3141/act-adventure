@@ -60,19 +60,19 @@ class StartHere extends React.Component {
           <h2 className="section-headline">my favourite posts</h2>
           <ul>
             <li>
-              <Link to="#">Fake It ‘Til You Make It</Link>
+              <Link to="/blog/fake-it-'til-you-make-it">Fake It ‘Til You Make It</Link>
             </li>
             <li>
-              <Link to="#">Antifragility: Building an Immunity</Link>
+              <Link to="/blog/antifragility-building-an-immunity">Antifragility: Building an Immunity</Link>
             </li>
             <li>
-              <Link to="#">Poop, Lies, & Social Media</Link>
+              <Link to="/blog/poop-lies-and-social-media">Poop, Lies, & Social Media</Link>
             </li>
             <li>
-              <Link to="#">A Story Of Hate & Fear</Link>
+              <Link to="/blog/a-story-of-hate-and-fear">A Story Of Hate & Fear</Link>
             </li>
             <li>
-              <Link to="#">Becoming Your Best Self</Link>
+              <Link to="/blog/becoming-your-best-self">Becoming Your Best Self</Link>
             </li>
           </ul>
         </div>
